@@ -57,7 +57,7 @@ export const FlipWordsSimple = ({
           type: "spring",
           stiffness: 100,
           damping: 15,
-          duration: 0.5,
+          duration: 0.01,
         }}
         className={cn(
           "inline-block text-center whitespace-normal break-words px-2 py-1",

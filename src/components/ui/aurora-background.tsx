@@ -12,7 +12,7 @@ interface AuroraBackgroundProps extends React.HTMLProps<HTMLDivElement> {
 export const AuroraBackground = ({
   className,
   children,
-  slideshowInterval = 6,
+  slideshowInterval = 600,
   ...props
 }: AuroraBackgroundProps) => {
   const images = [ "/image1.png", "/image2.png", "/image5.jpg"  ];

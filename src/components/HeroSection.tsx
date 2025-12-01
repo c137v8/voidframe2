@@ -8,6 +8,7 @@ import { ArrowRightIcon } from '@heroicons/react/24/outline';
 // Local components
 import { AuroraBackground } from '@/components/ui/aurora-background';
 import { FlipWordsSimple } from '@/components/ui/flip-words-simple';
+import  OpenInMapsButton from "@/components/OpenInMapsButton";
 
 // ------------------------------------
 // Types
