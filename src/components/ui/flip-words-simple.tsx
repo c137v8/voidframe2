@@ -60,9 +60,10 @@ export const FlipWordsSimple = ({
           duration: 0.5,
         }}
         className={cn(
-          "inline-block text-center whitespace-nowrap px-2 py-1",
+          "inline-block text-center whitespace-normal break-words px-2 py-1",
           className
         )}
+
         style={{
           ...style,
           overflow: 'visible',

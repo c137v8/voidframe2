@@ -65,3 +65,6 @@ html {
 .animate-aurora-move {
   animation: aurora-move 150s ease-in-out infinite;
 }
+.custom-blur {
+  backdrop-filter: blur(60px); /* Adjust blur intensity */
+}
