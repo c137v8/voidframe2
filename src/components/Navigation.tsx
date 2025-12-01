@@ -16,7 +16,7 @@ const Navigation = () => {
   const pathname = usePathname();
 
   const navigationItems = [
-    { name: "Add & Manage DPR", href: "#manage-dpr" },
+    { name: "Add & Manage DPR", href: "/portal" },
     { name: "AI Chatbot", href: "/chatbot" },
     { name: "Demo Video", href: "#offline-feature" },
     { name: "How to Analyze DPR", href: "#offline-feature" },

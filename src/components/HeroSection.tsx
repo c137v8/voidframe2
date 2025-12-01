@@ -12,7 +12,7 @@ import { FlipWordsSimple } from '@/components/ui/flip-words-simple';
 // ------------------------------------
 // Types
 // ------------------------------------
-
+const FLIP_DURATION = 2000;
 type StatTranslation = {
   number: string[];
   label: string[];
@@ -197,8 +197,8 @@ export default function HeroSection() {
     <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight space-y-2">
     {/* Top line: rotating phrase (DPR, Project Analysis, etc.) */}
     <FlipWordsSimple
-    words={t.headline}
-    duration={1200}
+    words={t.headline, languages}
+    duration={FLIP_DURATION}
     className="text-white"
     />
 
@@ -206,7 +206,7 @@ export default function HeroSection() {
     <div className="flex justify-center items-center min-h-[4.5rem] lg:min-h-[5.5rem] py-2">
     <FlipWordsSimple
     words={languages}
-    duration={1200}
+    duration={FLIP_DURATION}
     className="
     bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700
     bg-clip-text text-transparent
@@ -219,7 +219,7 @@ export default function HeroSection() {
     {/* "Made simple" rotating tagline */}
     <FlipWordsSimple
     words={t.madeSimple}
-    duration={1200}
+    duration={FLIP_DURATION}
     className="text-white text-lg sm:text-xl tracking-[0.15em] uppercase"
     />
     </h1>
@@ -236,7 +236,7 @@ export default function HeroSection() {
     >
     <FlipWordsSimple
     words={t.subtitle}
-    duration={1200}
+    duration={FLIP_DURATION}
     className="text-gray-200"
     />
     </p>
@@ -249,10 +249,10 @@ export default function HeroSection() {
       className="drop-shadow-[0_2px_6px_rgba(0,0,0,0.7)]"
       >
       <h2 className="text-3xl sm:text-4xl font-bold">
-      <FlipWordsSimple words={item.number} duration={1200} />
+      <FlipWordsSimple words={item.number} duration={FLIP_DURATION} />
       </h2>
       <p className="text-xs sm:text-sm opacity-80">
-      <FlipWordsSimple words={item.label} duration={1200} />
+      <FlipWordsSimple words={item.label} duration={FLIP_DURATION} />
       </p>
       </div>
     ))}
@@ -279,7 +279,7 @@ export default function HeroSection() {
     >
     <FlipWordsSimple
     words={t.cta}
-    duration={1200}
+    duration={FLIP_DURATION}
     className="text-gray-900 font-semibold"
     />
     <ArrowRightIcon className="ml-2 h-5 w-5" />

@@ -52,7 +52,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onLogin }) => {
         // Store token and user data
         localStorage.setItem('token', data.token);
         localStorage.setItem('user', JSON.stringify(data.user));
-        
+
         if (onLogin) {
           onLogin(data.user);
         }
